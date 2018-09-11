@@ -73,6 +73,7 @@ var vm = new Vue({
 		}, function(){
 			vm.progress = 100;
 			console.log('loading done');
+			// app.pageTo('#index')
 		});
 	},
 });

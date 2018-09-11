@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="css/lib/reset.css">
     <link rel="stylesheet" href="css/lib/animate.min.css">
     <script type="text/javascript">
-        document.writeln('\<link rel="stylesheet" href="css/style.css?v=' + Date.now() + '">')
+        var version = Date.now();
+        document.writeln('<link rel="stylesheet" href="css/style.css?v=' + version + '">')
     </script>
 </head>
 <body>
     <div id="wrap">
         <section class="page active" id="loading">
-            {{progress}}
+            <div v-html="progress"></div>
         </section>
         <section class="page disable" id="index">
 
@@ -38,7 +39,7 @@
     <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
     <script src="js/lib/weixin.js"></script>
     <script type="text/javascript">
-        document.writeln('\<script\ src="js/app.js?v=' + Date.now() + '">\<\/script\>')
+        document.writeln('<script src="js/app.js?v=' + version + '"></script\>')
     </script>
 </body>
 </html>
