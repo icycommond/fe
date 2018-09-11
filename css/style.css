@@ -1,0 +1,106 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,sans-serif;
+    background: #000;
+}
+
+#status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    z-index: 9999;
+}
+
+#wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    height: 100%;
+    z-index: 1;
+}
+
+.page {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.page.active {
+    z-index: 10;
+}
+
+.page.tmpActive {
+    z-index: 15;
+}
+
+#music {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 102px;
+    height: 102px;
+    z-index: 99;
+}
+
+#music:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -30px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/music.png) no-repeat;
+}
+
+#music.on:after {
+    background-position: 0 -60px;
+}
+
+.box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+#loading {
+    display: block;
+    background: #00f;
+}
+
+#index {
+    background: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
